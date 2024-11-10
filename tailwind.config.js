@@ -11,6 +11,8 @@ module.exports = {
         shimmer: "shimmer 2s linear infinite",
         shimmerElegant: "shimmerElegant 2.5s ease-in-out infinite",
         gradient: "gradient 3s ease infinite",
+        bounceEffect: "bounceEffect 3s ease-in-out infinite",
+        glow: "glow 1.8s ease-in-out infinite",
       },
       keyframes: {
         shimmer: {
@@ -26,6 +28,14 @@ module.exports = {
           "0%": { backgroundPosition: "0% 50%" },
           "50%": { backgroundPosition: "100% 50%" },
           "100%": { backgroundPosition: "0% 50%" },
+        },
+        bounceEffect: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        glow: {
+          "0%, 100%": { boxShadow: "0 0 8px rgba(147, 51, 234, 0.5)" }, 
+          "50%": { boxShadow: "0 0 18px rgba(147, 51, 234, 1)" }, 
         },
       },
 

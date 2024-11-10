@@ -9,3 +9,7 @@
     color: #ffff;
     scroll-behavior: smooth;
 }
+
+.will-change-transform {
+    will-change: transform, opacity;
+}
