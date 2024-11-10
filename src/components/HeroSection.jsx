@@ -23,7 +23,7 @@ const HeroSection = () => {
             </motion.h2>
 
             <motion.h3
-                className="text-3xl md:text-4xl  font-mono font-bold mb-4 mt-1"
+                className="text-2xl md:text-4xl  font-mono font-bold mb-4 mt-1"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1, duration: 1 }}
