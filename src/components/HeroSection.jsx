@@ -5,6 +5,7 @@ const greetings = [
     "Hey",        // United States
     "नमस्ते",    // India
     "Bonjour",    // France
+    "Sat Sri Akaal", // Punjab,India
     "Hola",       // Spain, Latin America
     "Ciao",       // Italy
     "Hallo",      // Germany
@@ -30,14 +31,15 @@ const HeroSection = () => {
 
   return (
     <section className="relative z-10 mt-24 md:mt-32 lg:mt-40 mx-6 md:mx-12 lg:mx-28 flex flex-col items-start text-white px-4">
-      <motion.h1
-        className="text-2xl md:text-4xl lg:text-5xl font-mono mb-3 will-change-transform"
-        initial={{ opacity: 0, translateY: -20 }}
-        animate={{ opacity: 1, translateY: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        {greetings[greetingIndex]}👋🏼I&apos;m  
-      </motion.h1>
+     <motion.h1
+      className="text-2xl md:text-4xl lg:text-5xl font-mono mb-3 will-change-transform"
+      initial={{ opacity: 0, translateY: -20 }}
+      animate={{ opacity: 1, translateY: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      {greetings[greetingIndex]}
+      <span className="inline-block animate-wave">👋</span>,I&apos;m
+    </motion.h1>
 
       <motion.h2
         className="w-fit text-4xl md:text-7xl lg:text-8xl font-zodiak font-bold mb-2 md:mb-4 py-2 bg-gradient-to-r from-pink-600 to-purple-400 bg-400% bg-clip-text text-transparent animate-gradient"

@@ -13,13 +13,16 @@ export const LINKS = [
   { href: "#contact", label: "Contact" },
 ];
 
-export const HERO_CONTENT = {
-  greeting: "Hey there! 🖐️",
-  introduction:
-    "I’m Keegan, a creative frontend developer, crafting immersive and intuitive web experiences.",
-  description:
-    "I’m currently helping businesses bring their visions to life through interactive digital solutions.",
-  resumeLinkText: "Download Resume",
+export const ABOUT_ME = {
+  About_me: "About Me",
+  para1:
+    "I’m Keegan, a creative frontend developer, crafting immersive and intuitive web experiences, I transform creative visions into seamless digital experiences, also i have a keen eye for design and user experience.I chose frontend development because it sits at the intersection of creative design and technical problem-solving.",
+
+    para2:"I love the immediate visual feedback of my work and the challenge of creating interfaces that delight users while maintaining clean, efficient code.I thrive on crafting intuitive user interfaces that not only look beautiful but also solve real-world problems.",
+
+    para3:" Let's connect and bring your vision to life through impactful web solutions.",
+
+  resumeLinkText: "Download CV",
   resumeLink: "/resume.pdf",
 };
 

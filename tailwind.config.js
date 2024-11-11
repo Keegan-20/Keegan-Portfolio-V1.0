@@ -13,6 +13,8 @@ module.exports = {
         gradient: "gradient 3s ease infinite",
         bounceEffect: "bounceEffect 3s ease-in-out infinite",
         glow: "glow 1.8s ease-in-out infinite",
+        wave: "wave 1.5s ease-in-out infinite",
+
       },
       keyframes: {
         shimmer: {
@@ -36,6 +38,14 @@ module.exports = {
         glow: {
           "0%, 100%": { boxShadow: "0 0 8px rgba(147, 51, 234, 0.5)" }, 
           "50%": { boxShadow: "0 0 18px rgba(147, 51, 234, 1)" }, 
+        },
+        wave: {
+          "0%": { transform: "rotate(0deg)" },
+          "20%": { transform: "rotate(15deg)" },
+          "40%": { transform: "rotate(-10deg)" },
+          "60%": { transform: "rotate(15deg)" },
+          "80%": { transform: "rotate(-10deg)" },
+          "100%": { transform: "rotate(0deg)" },
         },
       },
 
