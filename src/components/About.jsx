@@ -24,7 +24,7 @@ const imageVariants = {
   hidden: { clipPath: "inset(0 50% 0 50%)" },
   visible: {
     clipPath: "inset(0 0% 0 0%)",
-    transition: { duration: 3, ease: "easeInOut" },
+    transition: { duration: 1.2, ease: "easeInOut" },
   },
 };
 
@@ -33,11 +33,12 @@ const About = () => {
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
   return (
+    
     <section
       ref={sectionRef}
       className="min-h-screen flex flex-wrap flex-col md:flex-row items-center justify-center text-white relative z-10 md:ml-16"
     >
-  
+       
       <motion.div
         className="w-full md:w-[45%] mt-4 p-4 md:p-8 order-1 md:order-2"
         initial="hidden"

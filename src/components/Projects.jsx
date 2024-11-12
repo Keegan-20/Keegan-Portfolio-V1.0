@@ -1,0 +1,71 @@
+import { motion } from "framer-motion";
+import { PROJECTS } from "../constants/index";
+
+const Projects = () => {
+  const projectVariants = {
+    hidden: {
+      opacity: 0,
+      scale: 0.8,
+      rotate: -40,
+      y: 50,
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      rotate: 0,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+        type: "spring",
+        bounce: 0.4,
+      },
+    },
+  };
+  return (
+    <section className="px-6 py-10" id="work">
+      <h1 className="text-4xl md:text-6xl font-medium tracking-tight mb-10">
+        Work
+      </h1>
+      <div className="h-1 w-20 mb-8 bg-white"></div>
+      <div className="grid grid-cols-1 gap-6 md:gap-10">
+        {
+        PROJECTS.map((project, index) => (
+          <motion.div
+            key={index}
+            className="relative rounded-lg overflow-hidden h-[500px] transition transform flex items-center justify-center "
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={projectVariants}
+          >
+            <img
+              src={project.image}
+              alt={project.name}
+              className="absolute inset-0 w-full h-full md:w-2/3   object-cover transition-opacity duration-300 mx-auto rounded-2xl
+              "
+            />
+            <div className="relative z-20 p-6 flex flex-col justify-between h-full  text-white">
+              <h2 className="text-2xl font-medium mb-4">{project.name}</h2>
+              <p className="mb-4 flex-grow text-2xl">{project.description}</p>
+
+              <div className="flex flex-col justify-between">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener norefferer"
+                  className="bg-black/50 text-white
+                 rounded-full py-2 px-2 w-32 text-sm
+                hover:bg-gray-100 text-center"
+                >
+                  View on Github
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+  );
+};
+export default Projects;

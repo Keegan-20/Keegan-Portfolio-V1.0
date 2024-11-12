@@ -1,9 +1,8 @@
-import projects1 from "../assets/projects1.webp";
-import projects2 from "../assets/projects2.webp";
-import projects3 from "../assets/projects3.webp";
-import projects4 from "../assets/projects4.webp";
-import projects5 from "../assets/projects5.webp";
-import projects6 from "../assets/projects6.webp";
+import projects1 from "../assets/project1.webp";
+import projects2 from "../assets/project2.webp";
+import projects3 from "../assets/project3.webp";
+import projects4 from "../assets/project4.webp";
+import projects5 from "../assets/project5.webp";
 
 
 export const LINKS = [
@@ -58,12 +57,7 @@ export const PROJECTS = [
     image: projects5,
     link: "https://github.com/your-github/fitconnect",
   },
-  {
-    name: "WellNest",
-    description: "A wellness app for mental and physical health improvement",
-    image: projects6,
-    link: "https://github.com/your-github/wellnest",
-  },
+
 ];
 
 export const ABOUT_CONTENT = {
