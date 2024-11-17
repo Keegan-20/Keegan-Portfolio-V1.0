@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { PROJECTS } from "../constants/index";
+import { RiGithubFill } from "react-icons/ri";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const Projects = () => {
   const projectVariants = {
@@ -22,45 +24,56 @@ const Projects = () => {
       },
     },
   };
+
   return (
     <section className="px-6 py-10" id="work">
       <h1 className="text-4xl md:text-6xl font-medium tracking-tight mb-10">
         Work
       </h1>
-      <div className="h-1 w-20 mb-8 bg-white"></div>
-      <div className="grid grid-cols-1 gap-6 md:gap-10">
-        {
-        PROJECTS.map((project, index) => (
+      <div className="h-1 w-20 mb-8"></div>
+      <div className="grid grid-cols-1 gap-6 md:gap-10 ">
+        {PROJECTS.map((project, index) => (
           <motion.div
             key={index}
-            className="relative rounded-lg overflow-hidden h-[500px] transition transform flex items-center justify-center "
+            className="outer-container w-4/5 m-auto relative transition transform flex items-center justify-center  "
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={projectVariants}
           >
-            <img
-              src={project.image}
-              alt={project.name}
-              className="absolute inset-0 w-full h-full md:w-2/3   object-cover transition-opacity duration-300 mx-auto rounded-2xl
-              "
-            />
-            <div className="relative z-20 p-6 flex flex-col justify-between h-full  text-white">
-              <h2 className="text-2xl font-medium mb-4">{project.name}</h2>
-              <p className="mb-4 flex-grow text-2xl">{project.description}</p>
+            <div className="inner-container  rounded-2xl overflow-hidden p-2 border-slate-50 bg-white/30 shadow-lg backdrop-blur-sm border border-white/18 ">
+            
+            <div className="image-container p-4 md:p-6 lg:p-8 rounded-2xl overflow-hidden  shadow-md">
+  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-4">
+    <h2 className="text-xl text-center md:text-2xl font-medium mb-2 sm:mb-0">{project.name}</h2>
+    <div className="flex gap-2">
+      <a
+        href={project.githubLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-gray-900 text-white rounded-full py-2 px-3 md:py-3 md:px-4 transition duration-300 filter brightness-200 text-sm hover:bg-purple-800 text-center"
+      >
+        <RiGithubFill size={26} />
+      </a>
+      <a
+        href={project.liveLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-black/50 text-white rounded-full py-2 px-3 md:py-3 md:px-4 text-sm cursor-pointer hover:bg-purple-800 text-center inline-flex items-center gap-2"
+      >
+        <span className="font-medium">Visit</span>
+        <FiArrowUpRight size={22} />
+      </a>
+    </div>
+  </div>
+  <p className="  text-sm md:text-base mb-4">{project.description}</p>
+  <img
+    src={project.image}
+    alt={`${project.name} preview`}
+    className="w-full h-auto object-cover rounded-lg"
+  />
+</div>
 
-              <div className="flex flex-col justify-between">
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener norefferer"
-                  className="bg-black/50 text-white
-                 rounded-full py-2 px-2 w-32 text-sm
-                hover:bg-gray-100 text-center"
-                >
-                  View on Github
-                </a>
-              </div>
             </div>
           </motion.div>
         ))}
@@ -68,4 +81,5 @@ const Projects = () => {
     </section>
   );
 };
+
 export default Projects;

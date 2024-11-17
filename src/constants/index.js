@@ -27,14 +27,14 @@ export const ABOUT_ME = {
 
 export const PROJECTS = [
   {
-    name: "Streamerzz",
-    description: "Live stream management tool for content creators",
+    name: "ImagiFix",
+    description: "A Photo Editing Progresive Web App Built Using Vanilla Js Only.",
     image: projects1,
     link: "https://github.com/your-github/streamerzz",
   },
   {
-    name: "NutriTrack",
-    description: "Track your meals and calories with smart AI suggestions",
+    name: "YumBites Food",
+    description: "A Food Ordering Web App",
     image: projects2,
     link: "https://github.com/your-github/nutritrack",
   },

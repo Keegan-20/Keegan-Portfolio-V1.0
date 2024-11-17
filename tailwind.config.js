@@ -10,7 +10,7 @@ module.exports = {
       animation: {
         shimmer: "shimmer 2s linear infinite",
         shimmerElegant: "shimmerElegant 2.5s ease-in-out infinite",
-        gradient: "gradient 3s ease infinite",
+        gradient: "gradient 2.8s ease infinite",
         bounceEffect: "bounceEffect 3s ease-in-out infinite",
         glow: "glow 1.8s ease-in-out infinite",
         wave: "wave 1.5s ease-in-out infinite",
