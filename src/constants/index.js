@@ -3,6 +3,14 @@ import projects2 from "../assets/project2.webp";
 import projects3 from "../assets/project3.webp";
 import projects4 from "../assets/project4.webp";
 import projects5 from "../assets/project5.webp";
+import Figma from "../assets/figma.svg"
+import Jest from "../assets/jest.svg"
+import JavaScript from "../assets/javascript.svg"
+import React from "../assets/react.svg"
+import Git from "../assets/git.svg"
+import Redux from "../assets/redux.svg"
+import NextJs from "../assets/nextjs.svg"
+import TailwindCSS from "../assets/tailwindcss.svg"
 
 
 export const LINKS = [
@@ -66,6 +74,52 @@ export const ABOUT_CONTENT = {
     "I specialize in using technologies like React, Next.js, and Tailwind CSS to create responsive and scalable interfaces. My focus is on writing clean, maintainable code while collaborating with cross-functional teams to deliver projects that meet both business goals and user needs. I thrive in environments that challenge me to continuously learn and grow.",
   ],
 };
+
+ export const SKILLS = [
+  {
+    imgSrc: Figma,
+    label: 'Figma',
+    desc: 'Design tool'
+  },
+  {
+    imgSrc: JavaScript,
+    label: 'JavaScript',
+    desc: 'Programming language'
+  },
+
+  {
+    imgSrc: React,
+    label: 'React',
+    desc: 'Js library for UI'
+  },
+  {
+    imgSrc: TailwindCSS,
+    label: 'TailwindCSS',
+    desc: 'CSS framework'
+  },
+  {
+    imgSrc: Git,
+    label: 'Git',
+    desc: 'Version control system'
+  },
+
+  {
+    imgSrc: Redux,
+    label: 'Redux',
+    desc: 'State management library'
+  },
+  {
+    imgSrc: NextJs,
+    label: 'NextJs',
+    desc: 'React framework'
+  },
+ 
+  {
+    imgSrc: Jest,
+    label: 'Jest',
+    desc: 'Testing Framework'
+  },
+];
 
 export const CONTACT_CONTENT = {
   headline: "LET'S WORK ON SOMETHING GREAT",

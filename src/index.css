@@ -13,3 +13,7 @@
 .will-change-transform {
     will-change: transform, opacity;
 }
+
+.text-responsive {
+    font-size: clamp(1rem, 0.8852rem + 0.3898vw, 1.375rem);
+  }
