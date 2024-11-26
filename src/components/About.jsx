@@ -36,20 +36,30 @@ const About = () => {
     
     <section
       ref={sectionRef}
-      className="min-h-screen flex flex-wrap flex-col md:flex-row items-center justify-center text-white relative z-10 md:ml-16"
+      className="min-h-screen flex flex-wrap flex-col md:flex-row items-center justify-center text-white relative z-10 md:ml-16 "
     >
-       
+      <motion.h2
+        className=" md:hidden w-full text-4xl md:text-5xl font-medium tracking-tight mt-10  md:mt-3 ml-7   "
+        initial={{ opacity: 0, y: -20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
+      >
+        About Me
+        <div className="h-1 w-28 mt-4 mb-8 bg-white"></div>
+      </motion.h2>
+      
       <motion.div
-        className="w-full md:w-[45%] mt-4 p-4 md:p-8 order-1 md:order-2"
+        className="w-full md:w-[45%] mt-4  p-4 md:p-8 order-1 md:order-2"
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={imageVariants}
       >
+        
         <motion.img
           src={keeganDp}
       
           alt="keegan profile pic"
-          className="  w-44 h-auto  md:w-[350px] md:h-[400px] rounded-3xl md:rounded-2xl shadow-lg mx-auto"
+          className="  w-44 h-auto  md:w-[350px] md:h-[400px] rounded-3xl md:rounded-2xl shadow-lg mx-auto md:mt-14"
         />
       </motion.div>
 
@@ -59,18 +69,27 @@ const About = () => {
         animate={isInView ? "visible" : "hidden"}
         variants={containerVariants}
       >
+         <motion.h2
+        className=" hidden md:block w-full text-4xl md:text-5xl font-medium tracking-tight md:mt-3   "
+        initial={{ opacity: 0, y: -20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
+      >
+        About Me
+        <div className="h-1 w-28 mt-4 mb-8 bg-white"></div>
+      </motion.h2>
    
-        <motion.p className="text-lg mb-4" variants={textVariants}>
+        <motion.p className="text-lg mb-5 " variants={textVariants}>
           {ABOUT_ME.para1}
         </motion.p>
-        <motion.p className="hidden md:inline-block text-lg mb-4" variants={textVariants}>
+        <motion.p className="hidden md:inline-block text-lg mb-5 " variants={textVariants}>
           {ABOUT_ME.para2}
         </motion.p>
-        <motion.p className="text-lg mb-4" variants={textVariants}>
+        <motion.p className="text-lg mb-5 " variants={textVariants}>
           {ABOUT_ME.para3}
         </motion.p>
         <motion.a
-          className="inline-flex items-center gap-x-2 font-semibold bg-stone-50 hover:bg-pink-700 hover:text-white text-stone-900 p-3 lg:p-2 mt-4 rounded-xl animate-bounceEffect hover:animate-none"
+          className="inline-flex items-center gap-x-2 font-medium bg-pink-600  text-white p-3 lg:p-2 mt-4 rounded-xl animate-bounceEffect hover:animate-glow"
           href={ABOUT_ME.resumeLink}
           download
           rel="noopener noreferrer"

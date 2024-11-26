@@ -57,7 +57,7 @@ module.exports = {
         zodiak: ['Zodiak', 'serif'],
         satoshi: ['Satoshi', 'serif']
       },
-    },
+    },  
   },
   plugins: [],
 };

@@ -30,7 +30,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative z-10 mt-24 md:mt-32 lg:mt-40 mx-6 md:mx-12 lg:mx-28 flex flex-col items-start text-white px-4">
+    <section className="relative z-10 mt-24 md:mt-32 lg:mt-40 mx-6 md:mx-12 lg:mx-24 flex flex-col items-start text-white px-4">
      <motion.h1
       className="text-2xl md:text-4xl lg:text-5xl font-mono mb-3 will-change-transform"
       initial={{ opacity: 0, translateY: -20 }}
@@ -60,7 +60,7 @@ const HeroSection = () => {
       </motion.h3>
 
       <motion.p
-        className="text-xs md:text-lg lg:text-xl font-medium py-4 md:py-3 max-w-3xl leading-relaxed"
+        className="text-xs md:text-lg lg:text-xl font-medium pt-2 pb-4 max-w-3xl leading-relaxed"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.2, duration: 1 }}
