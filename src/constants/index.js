@@ -11,6 +11,10 @@ import Git from "../assets/git.svg"
 import Redux from "../assets/redux.svg"
 import NextJs from "../assets/nextjs.svg"
 import TailwindCSS from "../assets/tailwindcss.svg"
+import { SiCalendly } from "react-icons/si";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { RiTwitterXFill, RiGithubFill, RiLinkedinFill} from 'react-icons/ri';
+
 
 
 export const LINKS = [
@@ -122,28 +126,40 @@ export const ABOUT_CONTENT = {
 ];
 
 export const CONTACT_CONTENT = {
-  headline: "LET'S WORK ON SOMETHING GREAT",
+  headline: `" Learning, Living and Leveling Up . "`,
   description:
-    "I'm excited to collaborate on projects that push boundaries and create meaningful impact. Let's build something innovative and exceptional together.",
-  email: "keegancolaco201@gmail.com",
-  socialLinks: [
+    "Got an exciting project brewing? Let's talk! I love turning ideas into reality and am always eager to explore new collaborations.Whether you're looking to create something amazing together or just want to exchange ideas over virtual coffee, drop me a line via email or connect through my social channels.",
+
+ socialLinks: [
     {
-      platform: "Twitter",
-      url: "https://twitter.com/yourprofile",
-      ariaLabel: "Follow me on Twitter",
-      icon: "RiTwitterXFill",
+      platform: "LinkedIn",
+      url: "https://www.linkedin.com/in/keegan-colaco20",
+      ariaLabel: "Connect with me on LinkedIn",
+      icon: RiLinkedinFill,
     },
     {
       platform: "GitHub",
-      url: "https://github.com/yourprofile",
+      url: "https://github.com/Keegan-20 ",
       ariaLabel: "View my GitHub profile",
-      icon: "RiGithubFill",
+      icon: RiGithubFill,
     },
     {
-      platform: "LinkedIn",
-      url: "https://linkedin.com/in/yourprofile",
-      ariaLabel: "Connect with me on LinkedIn",
-      icon: "RiLinkedinFill",
+      platform: "Twitter",
+      url: "https://twitter.com/Keegan_WebDev",
+      ariaLabel: "Follow me on Twitter (X)",
+      icon: RiTwitterXFill,
+    },
+    {
+      platform: "Email",
+      url: "keegancolaco201@gmail.com",
+      ariaLabel: "Connect with me on Email",
+      icon: MdOutlineMailOutline,
+    },
+    {
+      platform: "Calendly",
+      url: "https://calendly.com/keegancolaco201",
+      ariaLabel: "Connect with me on Calendly:Schedule a meeting",
+      icon:SiCalendly ,
     },
   ],
   footerText: `© ${new Date().getFullYear()} Keegan Colaco. All rights reserved.`,

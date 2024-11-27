@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { LINKS } from "../constants";
 import { SquareArrowOutUpRight } from "lucide-react";
+import Logo from "../assets/Logo.webp";
 import { RiCloseFill, RiMenu3Fill } from "@remixicon/react";
 
 const Navbar = () => {
@@ -17,7 +18,7 @@ const Navbar = () => {
         <h1>
           <a href="/">
             <img
-              src="https://see.fontimg.com/api/rf5/519DV/Y2Q5NzkwZjg2MmZjNDhkYWJlZmZhNWYyYzk1MzNkMGYudHRm/S2VlZ2FuLg/better-grade.png?r=fs&h=85&w=1000&fg=FFFFFF&bg=1F1D1D&tb=1&s=85"
+              src={Logo}
               alt="Logo"
               className="h-10 md:h-14  my-2"
             />
