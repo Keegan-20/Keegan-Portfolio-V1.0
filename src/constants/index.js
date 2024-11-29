@@ -40,34 +40,39 @@ export const ABOUT_ME = {
 export const PROJECTS = [
   {
     name: "ImagiFix",
-    description: "A Photo Editing Progresive Web App Built Using Vanilla Js Only.",
+    description: "A feature-rich photo editing web app built with Vanilla JavaScript only, offering crop, rotate, flip, undo/redo, stunning filters, and offline-friendly PWA support!",
     image: projects1,
-    link: "https://github.com/your-github/streamerzz",
+    githubLink:"https://github.com/Keegan-20/ImagiFix",
+    link: "https://imagi-fix.vercel.app",
   },
   {
     name: "YumBites Food",
-    description: "A Food Ordering Web App",
+    description: "A food ordering website built with swiggys live API, React, Redux toolkit, and Parcel, featuring search, filtering, dynamic cart, shimmer UI, and cutting-edge performance optimizations!",
     image: projects2,
-    link: "https://github.com/your-github/nutritrack",
+    githubLink:"https://github.com/Keegan-20/YumBites-Food",
+    link: "https://yumbites-food.vercel.app",
   },
   {
-    name: "HairRevive",
-    description: "A platform for hair regrowth solutions powered by science",
+    name: "Saas Admin Dashboard",
+    description: "A pixel-perfect, responsive admin dashboard built with React, featuring seamless design adherence, meaningful microinteractions, and optimized for all devices.",
     image: projects3,
-    link: "https://github.com/your-github/hairrevive",
+    githubLink: "https://github.com/Keegan-20/Saas-admin-dashboard",
+    link: "https://saas-admin-dashboard1.vercel.app",
   },
   {
-    name: "DevDeck",
+    name: "RecipeHaven",
     description:
-      "Interactive dashboard for developers to track coding activity",
+      "A responsive recipe website built with HTML, CSS, and Vanilla JavaScript, featuring a search bar powered by TheMealDB API to explore dishes and view detailed recipes effortlessly.",
     image: projects4,
-    link: "https://github.com/your-github/devdeck",
+    githubLink: "https://github.com/Keegan-20/RecipeHaven",
+    link: "https://recipe-haven.vercel.app",
   },
   {
-    name: "FitConnect",
-    description: "Fitness social network to connect athletes and trainers",
+    name: "Modern Task Manager",
+    description: "A sleek web app for efficient task management with features like drag-and-drop organization, customizable status columns, and task creation, editing, and deletion.",
     image: projects5,
-    link: "https://github.com/your-github/fitconnect",
+    githubLink: "https://github.com/Keegan-20/modern-task-manager",
+    link: "https://modern-tasks-manager.vercel.app",
   },
 
 ];
