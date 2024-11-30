@@ -4,13 +4,14 @@ import { SKILLS } from "../constants"
 const Skills = () => {
   return (
    <section className="section">
-    <div className="container mb-9 pb-12">
-      <h2  className="text-4xl md:text-6xl font-medium tracking-tight mb-10">
+    <div className="container  mt-5 mb-9">
+      <h2  className="text-4xl md:text-6xl font-medium tracking-tight mb-5 mx-3 ">
        Current Stack
       </h2>
-      <p className="leading-7 mt-3 mb-8 text-center text-responsive ">A small list of cool things I use to construct my projects.</p>
+      <div className="h-1 w-28 mb-9 mx-3 bg-white"></div>
+      <p className="leading-7 mt-3 mb-8 text-center text-responsive mx-1 ">A small list of cool things I use to construct my projects.</p>
 
-      <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
+      <div className="grid gap-4 md:gap-3 mx-5 grid-cols-2 lg:grid-cols-4 ">
         {
           SKILLS.map(({imgSrc, label,desc},key)=>
           (
