@@ -30,7 +30,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative z-10 mt-24 md:mt-32 lg:mt-40 mx-6 md:mx-12 lg:mx-24 flex flex-col items-start text-white px-4">
+    <section id="home" className="relative z-10 mt-24 md:mt-32 lg:mt-40 mx-6 md:mx-12 lg:mx-24 flex flex-col items-start text-white px-4">
      <motion.h1
       className="text-2xl md:text-4xl lg:text-5xl font-mono mb-3 will-change-transform"
       initial={{ opacity: 0, translateY: -20 }}

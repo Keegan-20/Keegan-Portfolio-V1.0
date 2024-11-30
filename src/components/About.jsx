@@ -36,6 +36,7 @@ const About = () => {
     
     <section
       ref={sectionRef}
+      id="about"
       className="min-h-screen flex flex-wrap flex-col md:flex-row items-center justify-center text-white relative z-10 md:ml-16 "
     >
       <motion.h2

@@ -53,18 +53,17 @@ const Navbar = () => {
 
         {/* Hamburger Menu - Right (Mobile Only) */}
         <div className="md:hidden ml-auto">
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="text-white focus:outline-none"
-            aria-label={menuOpen ? "Close menu" : "Open menu"}
-          >
-            {menuOpen ? (
-              <RiCloseFill className="w-6 h-6" />
-            ) : (
-              <RiMenu3Fill className="w-6 h-6" />
-            )}
-          </button>
-        </div>
+  <button
+    onClick={() => setMenuOpen(!menuOpen)}
+    className="text-white focus:outline-none"
+    aria-label={menuOpen ? "Close menu" : "Open menu"}
+  >
+  
+    {menuOpen && <RiCloseFill className="w-6 h-6" />}
+    {!menuOpen && <RiMenu3Fill className="w-6 h-6" />}
+    
+  </button>
+</div>
         <a
           href="https://drive.google.com/file/d/1CrwFxRq-0yIdwdDPtaJD7aijEfwxcB3N/view"
           target="_blank"

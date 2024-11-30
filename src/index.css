@@ -2,13 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 :root{
     font-family: 'Satoshi', sans-serif;
     font-optical-sizing: auto;
     background: #0e0d0d;
     overflow-x: hidden;
     color: #ffff;
-    scroll-behavior: smooth;
 }
 
 .will-change-transform {
