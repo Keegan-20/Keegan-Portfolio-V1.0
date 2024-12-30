@@ -5,11 +5,11 @@ import { FiArrowUpRight } from "react-icons/fi";
 
 const Projects = () => {
   const projectVariants = {
-    hidden: {
+     hidden: {
       opacity: 0,
-      scale: 0.9, // Slightly closer to the target scale for less workload
-      rotate: -20, // Reduced rotation angle for smoother transitions
-      y: 20, // Minimized vertical movement
+      scale: 0.8, 
+      rotate: -40, 
+      y: 50, 
     },
     visible: {
       opacity: 1,
@@ -17,11 +17,10 @@ const Projects = () => {
       rotate: 0,
       y: 0,
       transition: {
-        duration: 0.5,
-        ease: [0.4, 0, 0.2, 1], 
+        duration: 0.6,
+        ease: "easeOut",
         type: "spring", 
-        stiffness: 50, 
-        damping: 15, 
+        bounce:0.4,
       },
     },
   };
