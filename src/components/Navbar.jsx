@@ -36,7 +36,20 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
+          
         </div>
+        <a
+            href="https://drive.google.com/file/d/1CrwFxRq-0yIdwdDPtaJD7aijEfwxcB3N/view"
+            target="_blank"
+          >
+            <button className=" hidden group relative md:flex items-center justify-center overflow-hidden rounded-full bg-stone-950/30 backdrop-blur-lg px-4 py-2 text-base text-white transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-stone-600/50 border border-white/20 space-x-2">
+              <span>Resume</span>
+              <SquareArrowOutUpRight className="ml-1 w-4 h-4 md:w-5 md:h-5" />
+              <div className="absolute inset-0 flex h-full w-full justify-center">
+                <div className="relative h-full w-[40%] bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmerElegant"></div>
+              </div>
+            </button>
+          </a>
 
         {/* Hamburger Menu Button */}
         <button
