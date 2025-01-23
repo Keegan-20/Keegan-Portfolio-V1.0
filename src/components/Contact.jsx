@@ -105,18 +105,20 @@ const Contact = () => {
                   whileInView="visible"
                   custom={1.0 + index * 0.2}
                   variants={iconVariants}
+                  className="transition duration-300 hover:text-black"
                 >
                   <Icon size={36} />
                 </motion.a>
               );
             })}
           </div>
+
         </div>
       </section>
 
       <footer className="mt-14  py-4  text-center">
         <p className=" text-xl md:text-3xl font-semibold ">
-          &copy; 2024{" "}
+          &copy; 2025{" "}
           <a
             href="https://www.linkedin.com/in/keegan-colaco20"
             target="_blank"

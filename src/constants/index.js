@@ -34,7 +34,7 @@ export const ABOUT_ME = {
     para3:" Let's connect and bring your vision to life through impactful web solutions.",
 
   resumeLinkText: "Download CV",
-  resumeLink: "/resume.pdf",
+  resumeLink: "/Keegan_resume.pdf",
 };
 
 export const PROJECTS = [
@@ -147,6 +147,7 @@ export const CONTACT_CONTENT = {
       url: "https://github.com/Keegan-20 ",
       ariaLabel: "View my GitHub profile",
       icon: RiGithubFill,
+        hoverColor: "hover:text-black", // GitHub black
     },
     {
       platform: "Twitter",
@@ -156,7 +157,7 @@ export const CONTACT_CONTENT = {
     },
     {
       platform: "Email",
-      url: "keegancolaco201@gmail.com",
+      url: "mailto:keegancolaco201@gmail.com",
       ariaLabel: "Connect with me on Email",
       icon: MdOutlineMailOutline,
     },
@@ -167,5 +168,6 @@ export const CONTACT_CONTENT = {
       icon:SiCalendly ,
     },
   ],
+    
   footerText: `© ${new Date().getFullYear()} Keegan Colaco. All rights reserved.`,
 };

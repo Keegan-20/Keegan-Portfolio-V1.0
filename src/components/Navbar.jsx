@@ -39,7 +39,7 @@ const Navbar = () => {
           
         </div>
         <a
-            href="https://drive.google.com/file/d/1CrwFxRq-0yIdwdDPtaJD7aijEfwxcB3N/view"
+            href="https://drive.google.com/file/d/1xchCGSpVs5NVz2Mrun4yExd4osxcqkWh/view?usp=sharing"
             target="_blank"
           >
             <button className=" hidden group relative md:flex items-center justify-center overflow-hidden rounded-full bg-stone-950/30 backdrop-blur-lg px-4 py-2 text-base text-white transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-stone-600/50 border border-white/20 space-x-2">

@@ -94,7 +94,6 @@ const About = () => {
           href={ABOUT_ME.resumeLink}
           download
           rel="noopener noreferrer"
-          target="_blank"
           variants={textVariants}
         >
           <button>{ABOUT_ME.resumeLinkText}</button>
